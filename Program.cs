@@ -1,5 +1,5 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using AutoclickRors;
 
 class Program
 {
@@ -8,9 +8,8 @@ class Program
     Application.EnableVisualStyles();
     Application.SetCompatibleTextRenderingDefault(false);
 
-    Form miVentana = new Form();
-    miVentana.Text = "Mi ventana C#";
-
-    Application.Run(miVentana); // Mantiene la ventana abierta
-}
+    Form mainWindow = new MainWindow();
+    // Mantiene la ventana abierta
+    Application.Run(mainWindow); 
+  }
 }
