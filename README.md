@@ -11,11 +11,15 @@
 dotnet new console --output .
 ```
 
+> [!WARNING]
 > para winforms (ventanas) (Si se ha creado con el otro, debemos modificar el csproj")
-<sub>dotnet new dotnet new winforms --output .</sub>
+```
+dotnet new dotnet new winforms --output .
+```
 
 ### 3- Para crear los binarios:
-```dotnet build
+```
+dotnet build
 ```
 
 ### 4- Para ejecutar el programa
@@ -23,9 +27,23 @@ dotnet new console --output .
 dotnet run
 ```
 
-### 5- Modicamos program.cs para personalizar el static void Main(string args[])
+### 5- Modificamos Program.cs para personalizar el código 
+```
+class Program
+{
+  static void Main(string[] args)
+  {
+    ...
+  }
+}
+```
 
 ### 6- Añadimos .cs para la ventana principal 
 ```
 dotnet new class -n MainWindow -o . 
 ```
+
+https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.414-windows-x64-installer
+
+
+### 7- Se recomienda meter la lógica de detras la 'Window' en un servicio
