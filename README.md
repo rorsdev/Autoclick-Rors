@@ -1,22 +1,31 @@
-Proyecto C# (autoclick)
+# Proyecto C# (Autoclick)
 
-Mis apuntes 
+## Guía rápida / Apuntes
 
-1- Instalar SDK, preparar entorno, etc
+### 1. Preparar el entorno
+- Instalar **.NET SDK** según tu sistema operativo.
+- Configurar tu IDE o editor de código (Visual Studio, VS Code, Rider, etc.).
 
-2- Crear nuevo proyecyo de c#
-<script>dotnet new console --output .</script>
+### 2. Crear un nuevo proyecto
+```
+dotnet new console --output .
+```
 
-para winforms (ventanas) (Si se ha creado con el otro, debemos modificar el csproj")
-<script>dotnet new dotnet new winforms --output .</script>
+> para winforms (ventanas) (Si se ha creado con el otro, debemos modificar el csproj")
+<sub>dotnet new dotnet new winforms --output .</sub>
 
-3- Para crear los binarios:
-<script>dotnet build</script>
+### 3- Para crear los binarios:
+```dotnet build
+```
 
-4- Para ejecutar el programa
-<script>dotnet run</script>
+### 4- Para ejecutar el programa
+```
+dotnet run
+```
 
-4- Modicamos program.cs para personalizar el static void Main(string args[])
+### 5- Modicamos program.cs para personalizar el static void Main(string args[])
 
-5- Para poder tener una venta instalamos paquete de windows.forms
-<script>dotnet add package System.Windows.Forms</script>
+### 6- Añadimos .cs para la ventana principal 
+```
+dotnet new class -n MainWindow -o . 
+```
